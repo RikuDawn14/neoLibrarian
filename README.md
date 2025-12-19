@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/logo-dark.svg" alt="openLibrarian logo" width="400">
+  <img src="docs/assets/logo-dark.svg" alt="openLibrarian logo" width="700">
 </p>
 
 ---
