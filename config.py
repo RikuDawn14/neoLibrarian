@@ -19,14 +19,9 @@ MOVIES = {
     'output_pattern': '{title} ({year}){ext}',
     'output_pattern_no_year': '{title}{ext}',
 
-    # Metadata requirements
-    'required_metadata': ['title', 'year'],
-    'optional_metadata': ['resolution', 'source'],
-
     'validation': {
-        'missing_year': 'warning',
-        'multiple_years': 'warning',
-        'suspicious_title': 'warning',
+        'year': 'warning',
+        'title': 'error',
     },
 }
 
@@ -37,13 +32,9 @@ TV_SHOWS = {
     # Output patterns
     'output_pattern': '{title} S{season:02d}E{episode:02d}{ext}',
 
-    # Metadata requirements
-    'required_metadata': ['title', 'season', 'episode'],
-    'optional_metadata': ['year', 'resolution', 'source'],
-
     'validation': {
-        'multiple_years': 'warning',
-        'suspicious_title': 'warning',
+        'season': 'error',
+        'title': 'error',
     },
 }
 
@@ -52,13 +43,10 @@ BOOKS = {
     **COMMON_SETTINGS,
 
     # Output patterns
-    'output_pattern': '{series_name} v{volume:02d}{ext}',
-
-    # Metadata requirements
-    'required_metadata': ['series_name', 'volume'],
+    'output_pattern': '{title} v{volume:02d}{ext}',
 
     'validation': {
-        'suspicious_title': 'warning',
+        'title': 'error',
     },
 }
 
