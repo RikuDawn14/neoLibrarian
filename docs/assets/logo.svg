@@ -1,0 +1,104 @@
+<svg width="600" height="260" viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Neon glow -->
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Accent gradient -->
+    <linearGradient id="neoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#FF2ED1"/>
+    </linearGradient>
+
+    <!-- Page edges -->
+    <linearGradient id="pages" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E6F1FF"/>
+      <stop offset="100%" stop-color="#B8C7D9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="260" fill="#0B0F14"/>
+
+  <!-- Book icon -->
+  <g transform="translate(60 50)" filter="url(#neonGlow)">
+
+    <!-- Book 1 : Film -->
+    <g>
+      <rect x="0" y="10" width="44" height="150" rx="4" fill="#00F0FF"/>
+      <rect x="36" y="14" width="6" height="142" fill="url(#pages)"/>
+
+      <!-- Film strip icon -->
+      <rect x="10" y="40" width="20" height="80" rx="2"
+            fill="none" stroke="#0B0F14" stroke-opacity="0.4" stroke-width="2"/>
+      <g fill="#0B0F14" opacity="0.4">
+        <rect x="12" y="44" width="4" height="6"/>
+        <rect x="12" y="60" width="4" height="6"/>
+        <rect x="12" y="76" width="4" height="6"/>
+        <rect x="12" y="92" width="4" height="6"/>
+        <rect x="12" y="108" width="4" height="6"/>
+        <rect x="24" y="44" width="4" height="6"/>
+        <rect x="24" y="60" width="4" height="6"/>
+        <rect x="24" y="76" width="4" height="6"/>
+        <rect x="24" y="92" width="4" height="6"/>
+        <rect x="24" y="108" width="4" height="6"/>
+      </g>
+    </g>
+
+    <!-- Book 2 : Music -->
+    <g>
+      <rect x="54" y="0" width="44" height="160" rx="4" fill="#00C2D1"/>
+      <rect x="90" y="4" width="6" height="152" fill="url(#pages)"/>
+
+      <!-- Bookmark -->
+      <polygon points="76,0 84,0 84,40 80,34 76,40"
+               fill="#FF2ED1"/>
+
+      <!-- Music note -->
+      <g fill="#0B0F14" opacity="0.4">
+        <rect x="74" y="52" width="4" height="40"/>
+        <ellipse cx="70" cy="90" rx="8" ry="6"/>        
+      </g>
+    </g>
+
+    <!-- Book 3 : Video / Media -->
+    <g>
+      <rect x="108" y="20" width="44" height="140" rx="4" fill="#FF2ED1"/>
+      <rect x="144" y="24" width="6" height="132" fill="url(#pages)"/>
+
+      <!-- Play icon -->
+      <polygon points="120,75 120,105 144,90"
+               fill="#0B0F14" opacity="0.35"/>
+    </g>
+
+    <!-- Ordering lines -->
+    <g stroke="url(#neoGradient)" stroke-width="4">
+      <line x1="170" y1="40" x2="220" y2="40"/>
+      <line x1="170" y1="80" x2="240" y2="80"/>
+      <line x1="170" y1="120" x2="210" y2="120"/>
+    </g>
+  </g>
+
+  <!-- Text -->
+  <g transform="translate(260 120)">
+    <text x="0" y="0"
+          font-size="48"
+          font-weight="600"
+          fill="#E6F1FF"
+          style="letter-spacing: 0.5px;">
+      neo<tspan fill="#00F0FF">Librarian</tspan>
+    </text>
+
+    <text x="0" y="36"
+          font-size="18"
+          fill="#8FA3B8"
+          style="letter-spacing: 1px;">
+      Bring order to your media library
+    </text>
+  </g>
+</svg>
