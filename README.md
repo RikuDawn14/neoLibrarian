@@ -6,7 +6,7 @@
 
 ## About
 
-**openLibrarian** is an open-source, Linux-first TUI application for organizing and renaming media libraries including movies, TV shows, books, and manga.
+**neoLibrarian** is an open-source, Linux-first TUI application for organizing and renaming media libraries including movies, TV shows, books, and manga.
 
 Built in Python with a focus on clean metadata, predictable naming, and terminal-native workflows.
 
