@@ -12,7 +12,7 @@ COMMON_SETTINGS = {
 },
 
 MOVIES = {
-    'extensions': ['.mkv', '.mp4', '.avi', '.mov', '.m4v'],
+    'extensions': ['.mkv', '.mp4', '.avi', '.mov', '.m4v', '.srt'],
     **COMMON_SETTINGS,
     
     # Output patterns
